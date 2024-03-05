@@ -87,7 +87,6 @@ class _UpdateProductsState extends State<UpdateProducts> {
                       description: descriptionController.text,
                       price: int.parse(price.text),
                     );
-                    print(widget.model);
                     if (widget.model.canCreateProduct()) {
                       ProductRepository response = ProductRepository();
                       await response.updateProducts(widget.model);
