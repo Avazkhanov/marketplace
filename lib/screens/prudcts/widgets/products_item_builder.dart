@@ -117,6 +117,7 @@ class ProductsItemBuilder extends StatelessWidget {
                           MaterialPageRoute(
                             builder: (context) =>
                                 UpdateProducts(changed: (t){
+                                  Navigator.pop(context);
                                   changed.call(t);
                                 }, model: model),
                           ),

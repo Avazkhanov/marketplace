@@ -28,7 +28,7 @@ class ProductsModel {
 
   Map<String, dynamic> toJson() {
     return {
-      'name': brand,
+      'brand': brand,
       'model': model,
       'description': description,
       'price': price,
@@ -39,7 +39,7 @@ class ProductsModel {
   Map<String, dynamic> toJsonForUpdate() {
     return {
       "_uuid": uuid,
-      'name': brand,
+      'brand': brand,
       'model': model,
       'description': description,
       'price': price,
